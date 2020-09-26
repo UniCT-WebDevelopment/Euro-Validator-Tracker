@@ -3,19 +3,51 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- !!insert favicon!! -->
+        <title>€ Validator&Tracker</title>
 
-        <title>Eurochecksum</title>
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/themify-icons.css">
+        <link rel="stylesheet" href="/css/flaticon.css">
+        <link rel="stylesheet" href="/vendors/fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="/vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="/vendors/animate-css/animate.css">
 
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-        <link href="/css/main.css" rel="stylesheet">
-        <link href="/css/grid.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">   
 
     </head>
     <body>
 
-        
+    <header class="header_area">
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    
+                   <!-- !!insert logo!! <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a> -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <li class="nav-item active"><a class="nav-link" href="/">Home</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="/learn">Learn More</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="/create">Try</a></li> 
+                        </ul>
+                    </div> 
+                    </div> 
+                </div>
+            </nav>
 
-        <!--Hero Section-->
+        </div>
+    </header>
+
+    @yield('banner')
+
+   <!-- 
+        
         <div class="col-m-12 col-12 hero" id="home" data-opacity data-flip>
             <div class="row" data-flip>
                 <div class="col-m-6 col-3 card check">
@@ -24,14 +56,14 @@
             </div>
         </div>
 
-        <!--About Section-->
+       
         <div class="col-m-12 col-12 learn" id="learn">
             <h1 class="title">Learn More</h1>
             <p>Some Text</p>
             <p>Other Some Text</p>
         </div>
 
-        <!--Footer Section-->
+
         <div class="col-m-12 col-12 footer">
             <div class="icon">
                 <a href="https://github.com/ausilianapoli">
@@ -47,6 +79,8 @@
                 <p class="copyright">&copy Copyright 2020</p>
             </div>
         </div> 
+
+-->
 
     </body>
 </html>
