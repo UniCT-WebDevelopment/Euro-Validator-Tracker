@@ -98,6 +98,10 @@ button:focus {
 img {
   max-width: 100%; }
 
+#logo {
+  max-width: 20%;
+}
+
 ul {
   list-style: none;
   padding: 0; }
@@ -473,7 +477,7 @@ ul {
       transform: rotate(-90deg);
       display: block;
       height: 108px;
-      poation: relative; }
+      position: relative; }
       .home_banner_area .social_area a i {
         font-size: 14px;
         margin-right: 10px; }
