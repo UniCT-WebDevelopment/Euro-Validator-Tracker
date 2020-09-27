@@ -32,7 +32,7 @@
                     </button>
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item active"><a class="nav-link" href="/">Home</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="/">Home</a></li> 
                             <li class="nav-item"><a class="nav-link" href="/learn">Learn More</a></li> 
                             <li class="nav-item"><a class="nav-link" href="/create">Try</a></li> 
                         </ul>
