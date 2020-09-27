@@ -682,6 +682,32 @@ ul {
 /*----------------------------------------------------*/
 /* Start Blog Area css
 ============================================================================================ */
+#history{
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+td,th{
+  padding-left: 8px;
+}
+
+th{
+  height: 60px;
+}
+
+td{
+  height: 48px;
+}
+
+tr{
+  border-bottom: 1px solid #797979;
+}
+
 .single-blog {
   transition: all 300ms linear 0s; }
   .single-blog .thumb {

@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/note', 'NoteController@index');
+Route::get('/note', 'NoteController@create');
 Route::get('/note/{id}', 'NoteController@show')->name('id');
 Route::get('/create', 'NoteController@create');
 Route::post('/note', 'NoteController@store');
