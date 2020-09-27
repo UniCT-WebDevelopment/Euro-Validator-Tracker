@@ -1,7 +1,21 @@
 @extends('layout')
 
-@section('serial')
+@section('banner')
 
+    <section class="hero-banner">
+        <div class="container">
+            <h2>Insert your <span class="basecolor">Note</span></h2>
+            <nav aria-label="breadcrumb" class="banner-breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Try</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+
+<!--
 <h1 class="title">Insert your Note</h1>
 
 <form method="post" action="/note">
@@ -26,5 +40,6 @@
     <input type="submit" value="submit">
 </form>
 <p class="erro-msg">{{ session('error-msg') }}</p>
+-->
 
-@endsection('serial')
+@endsection('banner')

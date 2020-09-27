@@ -595,7 +595,8 @@ ul {
 .hero-banner {
   position: relative;
   padding: 205px 0 150px !important;
-  background: url(../img/banner/banner-2.jpg) no-repeat scroll center center;
+  background: url(../img/banner/hero-banner.jpg) no-repeat scroll center center;
+  opacity: .7;
   background-size: cover; }
   @media (min-width: 768px) {
     .hero-banner {
@@ -611,7 +612,7 @@ ul {
         padding-top: 100px;
         padding-bottom: 100px; } }
   .hero-banner h1 {
-    color: #2a2a2a;
+    color: #003049;
     margin-bottom: 25px;
     font-size: 28px; }
     @media (min-width: 768px) {
@@ -620,7 +621,7 @@ ul {
         margin-bottom: 45px; } }
   .hero-banner h2 {
     font-size: 35px;
-    color: #2a2a2a;
+    color: #003049;
     text-transform: capitalize;
     margin-bottom: 0; }
     @media (min-width: 768px) {
@@ -628,11 +629,11 @@ ul {
         font-size: 42px; } }
   .hero-banner p {
     font-size: 22px;
-    color: #2a2a2a;
+    color: #003049;
     margin-bottom: 0; }
 
 .hero-banner-icon {
-  color: #2a2a2a;
+  color: #003049;
   display: inline-block; }
   @media (min-width: 768px) {
     .hero-banner-icon {
@@ -742,7 +743,7 @@ ul {
     font-size: 12px; }
 .l_blog_item .l_blog_text h4 {
   font-size: 18px;
-  color: #2a2a2a;
+  color: #003049;
   border-bottom: 1px solid #eeeeee;
   margin-bottom: 0px;
   padding-bottom: 20px;
@@ -785,7 +786,7 @@ ul {
       .causes_item .causes_img .c_parcent span {
         width: 70%;
         height: 3px;
-        background: #2a2a2a;
+        background: #003049;
         position: absolute;
         left: 0px;
         bottom: 0px; }
@@ -800,13 +801,13 @@ ul {
   .causes_item .causes_text {
     padding: 30px 35px 40px 30px; }
     .causes_item .causes_text h4 {
-      color: #2a2a2a;
+      color: #003049;
       font-size: 18px;
       font-weight: 600;
       margin-bottom: 15px;
       cursor: pointer; }
       .causes_item .causes_text h4:hover {
-        color: #2a2a2a; }
+        color: #003049; }
     .causes_item .causes_text p {
       font-size: 14px;
       line-height: 24px;
@@ -826,7 +827,7 @@ ul {
       border-color: #eeeeee;
       background: #fff;
       font-size: 14px;
-      color: #2a2a2a; }
+      color: #003049; }
 
 /* End Causes Area css
 ============================================================================================ */
@@ -861,9 +862,9 @@ ul {
   display: inline-block;
   padding: 1px 18px;
   text-align: center;
-  color: #2a2a2a; }
+  color: #003049; }
   .tags .tag_btn:before {
-    background: #2a2a2a; }
+    background: #003049; }
   .tags .tag_btn + .tag_btn {
     margin-left: 2px; }
 
@@ -931,7 +932,7 @@ ul {
   .blog_details p {
     margin-bottom: 30px; }
   .blog_details a {
-    color: #2a2a2a; }
+    color: #003049; }
     .blog_details a:hover {
       color: #f81c1c; }
   .blog_details h2 {
@@ -997,7 +998,7 @@ ul {
 .blog_right_sidebar .widget_title {
   font-size: 20px;
   margin-bottom: 40px;
-  color: #2a2a2a; }
+  color: #003049; }
   .blog_right_sidebar .widget_title::after {
     content: "";
     display: block;
@@ -1078,7 +1079,7 @@ ul {
     margin-bottom: 6px;
     transition: all 0.3s linear; }
   .blog_right_sidebar .popular_post_widget .post_item .media-body a {
-    color: #2a2a2a; }
+    color: #003049; }
     .blog_right_sidebar .popular_post_widget .post_item .media-body a:hover {
       color: #f81c1c; }
   .blog_right_sidebar .popular_post_widget .post_item .media-body p {
@@ -1164,14 +1165,14 @@ ul {
       font-size: 14px;
       transition: all 0.2s linear; }
       .single-post-area .social-links li a:hover {
-        color: #2a2a2a; }
+        color: #003049; }
 .single-post-area .blog_details {
   padding-top: 26px; }
   .single-post-area .blog_details p {
     margin-bottom: 20px;
     font-size: 15px; }
   .single-post-area .blog_details h2 {
-    color: #2a2a2a; }
+    color: #003049; }
 .single-post-area .quote-wrapper {
   background: rgba(130, 139, 178, 0.1);
   padding: 15px;
@@ -1241,7 +1242,7 @@ ul {
         height: 45px; } }
   .single-post-area .blog-author a {
     display: inline-block;
-    color: #2a2a2a; }
+    color: #003049; }
     .single-post-area .blog-author a:hover {
       color: #f81c1c; }
   .single-post-area .blog-author p {
@@ -1258,7 +1259,7 @@ ul {
   .single-post-area .navigation-area h4 {
     font-size: 18px;
     line-height: 25px;
-    color: #2a2a2a; }
+    color: #003049; }
   .single-post-area .navigation-area .nav-left {
     text-align: left; }
     .single-post-area .navigation-area .nav-left .thumb {
@@ -1306,13 +1307,13 @@ ul {
       padding: 50px 8px; } }
   .comments-area h4 {
     margin-bottom: 35px;
-    color: #2a2a2a;
+    color: #003049;
     font-size: 18px; }
   .comments-area h5 {
     font-size: 16px;
     margin-bottom: 0px; }
   .comments-area a {
-    color: #2a2a2a; }
+    color: #003049; }
   .comments-area .comment-list {
     padding-bottom: 48px; }
     .comments-area .comment-list:last-child {
@@ -1359,7 +1360,7 @@ ul {
     margin-bottom: 40px;
     font-size: 18px;
     line-height: 22px;
-    color: #2a2a2a; }
+    color: #003049; }
   .comment-form .name {
     padding-left: 0px; }
     @media (max-width: 767px) {
@@ -1421,9 +1422,9 @@ ul {
   .contact-info .media-body h3 {
     font-size: 16px;
     margin-bottom: 0;
-    color: #2a2a2a; }
+    color: #003049; }
     .contact-info .media-body h3 a {
-      color: #2a2a2a; }
+      color: #003049; }
       .contact-info .media-body h3 a:hover {
         color: #f81c1c; }
   .contact-info .media-body p {
@@ -1435,7 +1436,7 @@ ul {
   font-size: 27px;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #2a2a2a; }
+  color: #003049; }
 
 .form-contact label {
   color: #f81c1c;
@@ -2910,8 +2911,8 @@ h6 {
     border-color: #f81c1c;
     padding: 12px 25px; }
     .button-contactForm:hover {
-      border-color: #2a2a2a;
-      background: #2a2a2a;
+      border-color: #003049;
+      background: #003049;
       color: #fff; }
 
 /* End Main Button Area css
