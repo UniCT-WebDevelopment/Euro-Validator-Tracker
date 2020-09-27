@@ -498,6 +498,10 @@ ul {
       .home_banner_area .social_area {
         display: none; } }
 
+.basecolor{
+  color: #D62828;
+}
+
 .blog_banner {
   min-height: 660px;
   position: relative;

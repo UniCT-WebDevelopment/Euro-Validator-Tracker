@@ -5,12 +5,6 @@
     <section class="hero-banner">
         <div class="container">
             <h2>Insert your <span class="basecolor">Note</span></h2>
-            <nav aria-label="breadcrumb" class="banner-breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Try</li>
-                </ol>
-            </nav>
         </div>
     </section>
 
