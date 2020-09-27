@@ -15,15 +15,11 @@
         </div>
         <div class="social_area">
             <h4>
-                <a href="#"><i class="ti-instagram"></i>Instagram</a>
+                <a href="https://www.linkedin.com/in/maria-ausilia-napoli-spatafora-b529b036/"><i class="ti-linkedin"></i>Linkedin</a>
             </h4>
             <div class="round"></div>
             <h4>
-                <a class="twitter" href="#"><i class="ti-twitter"></i>Twitter</a>
-            </h4>
-            <div class="round"></div>
-            <h4>
-                <a href="#"><i class="ti-facebook"></i>Facebook</a>
+                <a class="twitter" href="https://github.com/ausilianapoli"><i class="ti-github"></i>Github</a>
             </h4>
             <div></div></div>
     </section>
