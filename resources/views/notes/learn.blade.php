@@ -15,15 +15,15 @@
                     <p>Euro (€) is the currency of the euro area and has been in circulation since 2002. The banknotes of the euro are issued by the national central banks of the Eurosystem or the European Central Bank. <br />
                     The euro notes contain many complex security features such as serial number, watermarks, invisible ink characteristics, holograms, optically variable inks and microprinting that document their authenticity. <br />
                     There are two series of euro banknotes:</p>
-                    <ol>
+                    <ul>
                         <li>1st series issued from 2002;</li>
                         <li>2st series or Europa series issued from 2013.</li>
-                    </ol>
+                    </ul>
                     <p>Each note has a unique serial number of 12 characters:</p>
-                    <ol>
+                    <ul>
                         <li>1st series notes have a letter as first character (that specifies the country of issue) and 11 digits;</li>
                         <li>2st series notes have a letter as first character such as 1st series, but 10 digits because the second char is also letter in order to increment combinations.</li>
-                    </ol>
+                    </ul>
                 </div>
                 <div class="col-lg-4">
                     <img src="{{ asset('img/some-notes.jpg') }}" alt="Some Euro notes">
