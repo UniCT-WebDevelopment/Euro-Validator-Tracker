@@ -102,6 +102,10 @@ img {
   max-width: 20%;
 }
 
+#welcomeImg{
+  max-width: 50%;
+}
+
 ul {
   list-style: none;
   padding: 0; }

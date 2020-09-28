@@ -24,6 +24,22 @@
             <div></div></div>
     </section>
 
+    <section class="area-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <p>Counterfeiting, which according to Italian law (and not only) constitutes a crime, is a phenomenon to which central banks pay the utmost attention since, if not kept under control, it can undermine public confidence in the currency, putting its integrity at risk.
+                    <br />
+                    This website offers unofficial service to verify the genuineness of Euro notes analyzing only their serial.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="{{ asset('img/notes-in-hands.jpg') }}" alt="Some notes in hands" id="welcomeImg">
+                </div>   
+            </div>
+        </div>
+    </section>
+
     <footer class="footer-area section_gap">
         <div class="container">
             <div class="row">
