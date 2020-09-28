@@ -32,7 +32,7 @@
                                 </tr>
                             @endforeach
                     </table>
-                    <p><span class="basecolor">*</span>The time is UTC.</p>
+                    <p><span class="basecolor">*</span>UTC time.</p>
                 </div>
             </div>
         </div>
