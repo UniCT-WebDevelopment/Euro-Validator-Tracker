@@ -90,7 +90,7 @@ button:focus {
     max-width: 1170px; } }
 
 .bg-1 {
-  background: #EAE2B7; }
+  background: #f7f7f7; }
 
 .pad-top-0 {
   padding-top: 0 !important; }
@@ -3422,7 +3422,7 @@ h6 {
 /*============== footer-area css ===============*/
 .footer-area {
   padding: 30px 0;
-  background-color: #141619; }
+  background-color: #003049; }
   .footer-area h6 {
     color: #fff;
     margin-bottom: 25px;

@@ -49,6 +49,23 @@
         </div>
     </section>
 
+    <section class="bg-gray area-padding bg-1" id="notValid">
+        <div class="container">
+            <div class="area-heading">
+                <h3>What to do if the note is <span>not valid</span>?</h3>
+                <p>A person who is doubtful about the legitimacy of a banknote should not try to spend it, because this would be a crime. He must have it examined by a teller of a commercial bank , Post Office or Bank of Italy branch.
+                <br />
+                If the teller thinks the note is a counterfeit, he or she must withdraw it from circulation and send it to the Bank of Italy's Head Office in Rome, where the suspected banknote National Analysis Centre (NAC) will establish whether or not it is a counterfeit.
+                <br />
+                When notes are withdrawn as suspected counterfeits, those who make the withdrawal draw up a report, a copy of which is given to the presenter of the note as a receipt. If the Bank of Italy finds the note to be legitimate, the presenter is reimbursed for the full amount with a BI cashier's cheque, otherwise the presenter receives nothing.
+                <br />
+                The Bank of Italy informs the entity that made the withdrawal (so-called "submitter") of the outcome of the examination.
+                <br />
+                Knowledge of the security features of banknotes is the most effective protection from counterfeit notes and the loss caused by accepting them.</p>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer-area section_gap">
         <div class="container">
             <div class="row">

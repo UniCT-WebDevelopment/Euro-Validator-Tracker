@@ -18,6 +18,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
+                    @if($note[0]->valid == false)
+                        <h4>To know what to do if the note is not valid read <a href="/learn#notValid">here</a></h4>
+                    @endif
                     <h4>Its history <br /></h4>
                     <p>This note is recorded <span class="basecolor">{{ count($note) }}</span> times in the database.</p>
                     <table id="history">
