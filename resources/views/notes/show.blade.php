@@ -23,7 +23,7 @@
                     <table id="history">
                         <tr>
                             <th>Zip Code</th>
-                            <th>Insert Time</th>
+                            <th>Insert Time<span class="basecolor">*</span></th>
                         </tr>
                             @foreach($note as $n)
                                 <tr>
@@ -32,6 +32,7 @@
                                 </tr>
                             @endforeach
                     </table>
+                    <p><span class="basecolor">*</span>The time is UTC.</p>
                 </div>
             </div>
         </div>
