@@ -1490,6 +1490,10 @@ tr{
   border-radius: 12px;
   height: 100% !important; }
 
+.error-msg{
+  color: #D62828;
+}
+
 /*=================== contact form end ====================*/
 /* Contact Success and error Area css
 ============================================================================================ */

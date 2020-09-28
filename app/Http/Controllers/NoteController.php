@@ -30,6 +30,10 @@ class NoteController extends Controller
         return view('notes.create');
     }
 
+    public function learn(){
+        return view('notes.learn');
+    }
+
     public function store() {
         $note = new Note();
 

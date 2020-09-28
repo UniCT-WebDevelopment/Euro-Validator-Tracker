@@ -20,5 +20,6 @@ Route::get('/', function () {
 Route::get('/note', 'NoteController@create');
 Route::get('/note/{id}', 'NoteController@show')->name('id');
 Route::get('/create', 'NoteController@create');
+Route::get('/learn', 'NoteController@learn');
 Route::post('/note', 'NoteController@store');
 
