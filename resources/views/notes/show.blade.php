@@ -5,7 +5,7 @@
     <section class="hero-banner">
         <div class="container">
             <h2>{{ $note[0]->serial }} is 
-            @if($note[0]->valid == true)
+            @if($note[0]->valid === 1)
                 <span class="basecolor">valid</span>
             @else
                 <span class="basecolor">not valid</span>
@@ -18,6 +18,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
+                @if(isset($note[0]->zip))
                     @if($note[0]->valid == false)
                         <h4>To know what to do if the note is not valid read <a href="/learn#notValid">here</a></h4>
                     @endif
@@ -36,6 +37,16 @@
                             @endforeach
                     </table>
                     <p><span class="basecolor">*</span>UTC time.</p>
+                    @else
+                        @if($note[0]->valid === 2)
+                            <h4>It is not serial for Euro notes.</h4>
+                            <p>Here there is an example of serial <br /><img class="center" src="{{ asset('img/serial.jpg') }}" alt="Example of serial"></p>
+                        @else
+                            <h4>This note is not tracked in the system; insert it <a href="/create">here</a> to track!</h4>
+                            <img class="center" src="{{ asset('img/saving.jpg') }}" alt="Example of serial">
+                        @endif
+                        
+                    @endif
                 </div>
             </div>
         </div>

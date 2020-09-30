@@ -24,6 +24,16 @@ class NoteController extends Controller
     public function show($id){
         $note = Note::where('serial', $id)->get();
         //use the $id variable to query the DB for a record
+        if($note->isEmpty()){
+            $noteModel = new Note();
+            $result = $noteModel->checkSerial($id);
+                $note = collect([
+                    (object)[
+                        'serial'=>$id,
+                        'valid'=>$result
+                    ]
+                ]);
+        }
         return view('notes.show', ['note' => $note]);
     }
 
