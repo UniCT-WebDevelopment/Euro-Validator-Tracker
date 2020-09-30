@@ -7,6 +7,7 @@ use App\Note;
 
 class NoteController extends Controller
 {
+    /*
     public function index() { //show all stored notes in database
         //$notes = Note::all();
         $notes = Note::orderBy('serial')->get();
@@ -18,11 +19,11 @@ class NoteController extends Controller
         //return view('note', ['notes' => $notes]);
         return view('notes.index', ['serial' => $serial, 'value' => $value, 'zip' => $zip, 'valid' => true]);
     }
+    */
 
     public function show($id){
         $note = Note::where('serial', $id)->get();
         //use the $id variable to query the DB for a record
-        //return view('notes.show', ['note' => $note]);
         return view('notes.show', ['note' => $note]);
     }
 

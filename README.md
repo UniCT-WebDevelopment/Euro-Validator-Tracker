@@ -1,79 +1,64 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+<p align="center"><img src="images_README/logo_black.png" width="250"></p>
+# Euro Validator&Tracker
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
 
-## About Laravel
+Banknotes are one of the most important assets of a country. Some criminals introduce fake notes which bear a resemblance to original note to create discrepancies of the money in the financial market.  
+Counterfeiting, which according to Italian law (and not only) constitutes a crime, is a phenomenon to which central banks pay the utmost attention since, if not kept under control, it can undermine public confidence in the currency, putting its integrity at risk.  
+*Euro Validator&Tracker* is a web service to verify the genuineness of Euro notes analyzing only their serial. It is free and unofficial.  
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## About Euro Notes
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Euro (€) is the currency of the euro area and has been in circulation since 2002. The banknotes of the euro are issued by the national central banks of the Eurosystem or the European Central Bank.  
+The euro notes contain many complex security features such as serial number, watermarks, invisible ink characteristics, holograms, optically variable inks and microprinting that document their authenticity.  
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+There are two series of euro banknotes:  
+- 1st series issued from 2002;  
+- 2st series or Europa series issued from 2013.
 
-## Learning Laravel
+### Serial Number
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Each note has a unique serial number of 12 characters:  
+- 1st series notes have a letter as first character (that specifies the country of issue) and 11 digits;  
+- 2st series notes have a letter as first character such as 1st series, but 10 digits because the second char is also letter in order to increment combinations.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Each country (i.e. first char) has a control code (for example the letter of Italy is 'S' and its control code is 7) and the sum of all digits and the ASCII of the second letter for Europa series until the result is less than 9 (i.e. the root), must be equals to control code in order to pass the checksum.  
+*Example:*  
+- *SA2160296285 is the serial number;*  
+- *'S' specifies the country and, particularly, Italy with control code equals to 7;*  
+- *the ASCII of A is 65;*  
+- *the sum is: 6+5+2+1+6+0+2+9+6+2+8+5=52 -> 5+2=7*  
+- *the obtained root coincides with the control code.*  
 
-## Laravel Sponsors
+Tables of control codes and further information at [Wikipedia page](https://en.wikipedia.org/wiki/Euro_banknotes).  
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Structure and Technologies
+    
+For the development of this web service I have used the following technologies:  
+- `Laravel`, a PHP web application framework;  
+- `MySQL`, a relational database management system;  
+- `jQuery`, a cross-platform JS library to simplify client-side scripting;  
+- `Bootstrap`, a popular front-end framework.  
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
-- [云软科技](http://www.yunruan.ltd/)
+Moreover, I have used a website template offered by [Colorlib](https://colorlib.com/) and a color palette proposed by [Coolors](https://coolors.co/).  
 
-## Contributing
+The service requires the user to enter the serial number, the value of the note and the ZIP code of the place where that note has been received; all this information with the insert time and the result of validity check are stored in database; then the server will answer with the genuineness of the note and its history to know where and when that note has been recorded.  
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Here, there are some screen of the webapp.
+<p><img src="images_README/home.png" width="500"></p>
+<p><img src="images_README/try.png" width="500"></p>
+<p><img src="images_README/note.png" width="500"></p>
 
-## Code of Conduct
+## Installation note
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+It needs machine with `Laravel` and `MySQL`; then you can clone this repository and from the directory of the project you can run `php artisan serve` that will boot a development server on which to test the service.
 
-## Security Vulnerabilities
+## Author
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+*Euro Validator&Tracker* has been developed by Maria Ausilia Napoli Spatafora, Computer Science student at University of Catania, Italy.
+### Contacts
+- email: [ausilianapoli@gmail.com](mailto:ausilianapoli@gmail.com)    
+- LinkedIn: [Maria Ausilia Napoli Spatafora](https://www.linkedin.com/in/maria-ausilia-napoli-spatafora-b529b036/)
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+*Euro Validator&Tracker* is open-sourced software licensed under the [A-GPL v3.0 license](https://www.gnu.org/licenses/agpl-3.0.html).
