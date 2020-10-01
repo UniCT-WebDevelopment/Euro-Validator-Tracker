@@ -39,7 +39,7 @@ For the development of this web service I have used the following technologies:
 - `jQuery`, a cross-platform JS library to simplify client-side scripting;  
 - `Bootstrap`, a popular front-end framework.  
 
-Moreover, I have used a website template offered by [Colorlib](https://colorlib.com/) and a color palette proposed by [Coolors](https://coolors.co/).  
+Moreover, I used a website template offered by [Colorlib](https://colorlib.com/) and a color palette proposed by [Coolors](https://coolors.co/).  
 
 The service requires the user to enter the serial number, the value of the note and the ZIP code of the place where that note has been received; all this information with the insert time and the result of validity check are stored in database; then the server will answer with the genuineness of the note and its history to know where and when that note has been recorded.  
 

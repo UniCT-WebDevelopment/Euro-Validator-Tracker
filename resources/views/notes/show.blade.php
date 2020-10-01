@@ -18,25 +18,25 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                @if(isset($note[0]->zip))
-                    @if($note[0]->valid == false)
-                        <h4>To know what to do if the note is not valid read <a href="/learn#notValid">here</a></h4>
-                    @endif
-                    <h4>Its history <br /></h4>
-                    <p>This note is recorded <span class="basecolor">{{ count($note) }}</span> times in the database.</p>
-                    <table id="history">
-                        <tr>
-                            <th>Zip Code</th>
-                            <th>Insert Time<span class="basecolor">*</span></th>
-                        </tr>
-                            @foreach($note as $n)
-                                <tr>
-                                    <td>{{ $n->zip }}</td>
-                                    <td>{{ $n->created_at }}</td>
-                                </tr>
-                            @endforeach
-                    </table>
-                    <p><span class="basecolor">*</span>UTC time.</p>
+                    @if(isset($note[0]->zip))
+                        @if($note[0]->valid == false)
+                            <h4>To know what to do if the note is not valid read <a href="/learn#notValid">here</a></h4>
+                        @endif
+                        <h4>Its history <br /></h4>
+                        <p>This note is recorded <span class="basecolor">{{ count($note) }}</span> times in the database.</p>
+                        <table id="history">
+                            <tr>
+                                <th>Zip Code</th>
+                                <th>Insert Time<span class="basecolor">*</span></th>
+                            </tr>
+                                @foreach($note as $n)
+                                    <tr>
+                                        <td>{{ $n->zip }}</td>
+                                        <td>{{ $n->created_at }}</td>
+                                    </tr>
+                                @endforeach
+                        </table>
+                        <p><span class="basecolor">*</span>UTC time.</p>
                     @else
                         @if($note[0]->valid === 2)
                             <h4>It is not serial for Euro notes.</h4>
@@ -44,8 +44,7 @@
                         @else
                             <h4>This note is not tracked in the system; insert it <a href="/create">here</a> to track!</h4>
                             <img class="center" src="{{ asset('img/saving.jpg') }}" alt="Example of serial">
-                        @endif
-                        
+                        @endif     
                     @endif
                 </div>
             </div>

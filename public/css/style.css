@@ -113,6 +113,12 @@ img {
   width: 30%;
 }
 
+[bg-transparency]{
+  display: inline-block;
+	padding: 15px;
+	background-color: rgba(234,226,183, 0.2);
+}
+
 @media (min-width: 1620px) {
   .box_1620 {
     max-width: 1650px;
